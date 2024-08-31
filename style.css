@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./images/rain.jpg) no-repeat center center/cover; /* Add background image here */
+    color: #fff;
+    font-weight: 600;
+}
+
+.container {
+    width: 350px;
+    border: 0.5px solid #fff;
+    border-radius: 10px;
+    padding: 28px 32px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container h1 {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.inputBox {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.copy-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #1dcf09;
+    font-size: 24px; /* Increase the size */
+    cursor: pointer;
+    z-index: 2;
+    font-weight: bold; /* Make the icon bold */
+}
+
+.passBox {
+    background-color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 20px;
+    margin-bottom: 8px;
+    text-overflow: ellipsis;
+    color: #000;
+}
+
+.strengthMeter {
+    height: 10px;
+    width: 100%;
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.strengthMeter div {
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+.weak {
+    background-color: red;
+}
+
+.moderate {
+    background-color: orange;
+}
+
+.strong {
+    background-color: green;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.row p, .row label {
+    flex-basis: 70%;
+    font-size: 18px;
+}
+
+.row input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.genBtn {
+    border: none;
+    outline: none;
+    background-color: #347deb;
+    padding: 12px 24px;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+.saveBtn {
+    border: solid;
+    outline: none;
+    background-color: #05ae10;
+    padding: 12px 24px;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.genBtn:hover, .saveBtn:hover {
+    background-color: #0044cc;
+}
+
+#inputSlider {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+#sliderValue {
+    font-size: 18px;
+}
